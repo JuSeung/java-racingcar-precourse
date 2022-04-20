@@ -34,5 +34,19 @@ public class CarTest {
                 .hasMessage("자동차 이름은 공백이 아니여야 합니다.");
     }
 
+    @DisplayName("자동차 값이 4이상 이면 전진")
+    @Test
+    void car_can_move() {
+        Car car = new Car("aaa");
+        car.move(4);
+        assertThat(car.getPosition()).isEqualTo(1);
+    }
 
+    @DisplayName("자동차 값이 3이하이면 멈춤")
+    @Test
+    void car_stop() {
+        Car car = new Car("aaa");
+        car.move(3);
+        assertThat(car.getPosition()).isEqualTo(0);
+    }
 }
