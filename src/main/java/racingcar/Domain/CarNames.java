@@ -5,8 +5,8 @@ import java.util.List;
 import org.junit.platform.commons.util.StringUtils;
 
 public class CarNames {
-    public static final String WRONG_CART_NAME_EMPTY = "자동차 이름은 공백이 아니여야 합니다.";
-    public static final String SEPARATION = ",";
+    private static final String WRONG_CART_NAME_EMPTY = "자동차 이름은 공백이 아니여야 합니다.";
+    private static final String SEPARATION = ",";
     private final List<String> carNameList;
 
     public CarNames(String inputCarNames) {
