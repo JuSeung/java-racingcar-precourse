@@ -2,6 +2,7 @@ package racingcar.Domain;
 
 
 public class Car {
+    public static final int CAN_MOVE_NUMBER = 4;
     private CarName carName;
     private Position position;
 
@@ -16,7 +17,7 @@ public class Car {
     }
 
     public void move(int randomNumber) {
-        if (randomNumber >= 4) {
+        if (randomNumber >= CAN_MOVE_NUMBER) {
             position.canMove();
         }
     }

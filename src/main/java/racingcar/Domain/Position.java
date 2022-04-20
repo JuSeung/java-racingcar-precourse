@@ -1,10 +1,12 @@
 package racingcar.Domain;
 
 public class Position {
+    public static final int INIT_POSITION = 0;
+    public static final int MOVE_POSITION = 1;
     private int position;
 
     public Position() {
-        this.position = 0;
+        this.position = INIT_POSITION;
     }
 
     public Position(int position) {
@@ -16,6 +18,6 @@ public class Position {
     }
 
     public void canMove() {
-        this.position = this.position + 1;
+        this.position = this.position + MOVE_POSITION;
     }
 }
