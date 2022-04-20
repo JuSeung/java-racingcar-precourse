@@ -12,7 +12,7 @@ public class CarTest {
     @Test
     void set_car_name() {
         Car car = new Car("shin");
-        assertThat(car.getName()).isEqualTo("shin");
+        assertThat(car.getCarName()).isEqualTo("shin");
     }
 
     @DisplayName("자동차 이름은 5자이상이면 IllegalArgumentException 던진다.")
