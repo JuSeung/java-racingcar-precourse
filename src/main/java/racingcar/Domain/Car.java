@@ -3,8 +3,8 @@ package racingcar.Domain;
 
 public class Car {
     public static final int CAN_MOVE_NUMBER = 4;
-    private CarName carName;
-    private Position position;
+    private final CarName carName;
+    private final Position position;
 
     public Car(String name) {
         this.carName = new CarName(name);
