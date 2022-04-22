@@ -56,6 +56,7 @@ public class CarTest {
     @Test
     void is_winner() {
         Car car = new Car("aaaa", 4);
-        assertTrue(car.isWinner(4));
+        car.comparePosition(4);
+        assertTrue(car.isWinner());
     }
 }
