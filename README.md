@@ -23,8 +23,8 @@
 - [x] 자동차 멈춤 조건은 3 이하
 - [x] 해당 자동차가 우승 했는지 확인한다.
 - [x] 자동차 중에 제일 큰위치 값을 가져온다.
-- [ ] 우승자가 한 명 이상일 경우 , 쉼표로 구분해 출력
-- [ ] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException를 발생
+- [x] 우승자가 한 명 이상일 경우 , 쉼표로 구분해 출력
+- [x] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException를 발생
   - [x] 자동차 이름이 5자 이하가 아니면 IllegalArgumentException 발생
   - [x] 자동차 이름이 공백이면 IllegalArgumentException 발생
   - [x] 입력받은 자동차 이름들이 공백이면 IllegalArgumentException 발생
