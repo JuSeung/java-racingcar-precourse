@@ -13,23 +13,31 @@ public class InputView {
         System.out.println(INPUT_NAMES_MESSAGE);
         while (true) {
             try {
-                return new CarNames(Console.readLine());
+                return getCarNames();
             } catch (IllegalArgumentException e) {
                 System.out.println(ERROR + e.getMessage());
-                return new CarNames(Console.readLine());
+                return getCarNames();
             }
         }
+    }
+
+    private static CarNames getCarNames() {
+        return new CarNames(Console.readLine());
     }
 
     public static Laps askLapsNumber() {
         System.out.println(INPUT_LAPS_MESSAGE);
         while (true) {
             try {
-                return new Laps(Console.readLine());
+                return getLaps();
             } catch (IllegalArgumentException e) {
                 System.out.println(ERROR + e.getMessage());
-                return new Laps(Console.readLine());
+                return getLaps();
             }
         }
+    }
+
+    private static Laps getLaps() {
+        return new Laps(Console.readLine());
     }
 }
