@@ -29,7 +29,7 @@ public class CarsTest {
         CarNames carNames = new CarNames(carName);
         Cars cars = new Cars(carNames);
         for (int i = 0 ; i < 2 ; i ++ ) {
-            cars.moveCars();
+            cars.getCarList().get(0).move(4);
         }
         assertThat(cars.getCarList().get(0).getPosition()).isEqualTo(2);
     }

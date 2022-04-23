@@ -16,25 +16,6 @@ public class CarTest {
         assertThat(car.getCarName()).isEqualTo("shin");
     }
 
-    @DisplayName("자동차 이름은 5자이상이면 IllegalArgumentException 던진다.")
-    @Test
-    void car_name_lengh() {
-        assertThatThrownBy(() -> {
-            Car car = new Car("jsshin11111");
-        }).isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("자동차 이름은 5자 이하만 가능하다.");
-    }
-
-
-    @DisplayName("자동차 이름은 공백이면 IllegalArgumentException 던진다.")
-    @Test
-    void car_name_empty() {
-        assertThatThrownBy(() -> {
-            Car car = new Car("");
-        }).isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("자동차 이름은 공백이 아니여야 합니다.");
-    }
-
     @DisplayName("자동차 값이 4이상 이면 전진")
     @Test
     void car_can_move() {
