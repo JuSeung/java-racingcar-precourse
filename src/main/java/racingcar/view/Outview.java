@@ -9,7 +9,7 @@ public class Outview {
     public static final String COLON = " : ";
     public static final String HYPHEN = "-";
     public static final String COMMA = ",";
-    public static final String WINNER_MESSAGE = "최종 우승자는 %s 입니다.";
+    public static final String WINNER_MESSAGE = "최종 우승자: %s";
 
     public static void printForEachOrder(Cars cars) {
         for (Car car : cars.getCarList()) {

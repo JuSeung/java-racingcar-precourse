@@ -28,7 +28,7 @@
   - [x] 자동차 이름이 5자 이하가 아니면 IllegalArgumentException 발생
   - [x] 자동차 이름이 공백이면 IllegalArgumentException 발생
   - [x] 입력받은 자동차 이름들이 공백이면 IllegalArgumentException 발생
-- [ ] 에러 메시지를 출력 후 그 부분부터 입력을 다시 받는다.
+- [x] 에러 메시지를 출력 후 그 부분부터 입력을 다시 받는다.
 
 
 
